@@ -55,7 +55,7 @@
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Manual nota</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Emissão Nota Fiscal</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -63,49 +63,108 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" >
-                            <div class=" d-flex align-items-center justify-content-center h-100 w-100">
-                                <!-- <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div> -->
-                            </div>
-                            <a href="notafiscal.html">
-                                <img class="img-fluid" src="assets/img/portfolio/notafiscal.png" alt="..." />
-                            </a>
-                            
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/devolucao.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/garantia.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/substituicao.png" alt="..." />
-                        </div>
-                    </div>
-                    
-                    </div>
-                </div>
+                <p class="mb-4">
+                    <ol style="padding:35px ;" class="area-nota">
+                        <h3 class="sub-nota">Informações da nota</h3>
+                        <ol>
+                            <p><strong>Tipo Nota:</strong> O tipo SAÍDA vai ser utilizado sempre
+                                que tiver como o intuito subtrair o produto do estoque e ENTRADA sempre que tiver como
+                                intuito acrescentar no estoque.
+                                <br>
+                                <strong>Forma de Pagamento:</strong> Pagamento a vista quando for nota de saída, sem pagamento quando for para nota de entrada ou devolução.
+                                <br>
+                                <strong>Consumidor Final:</strong> Sim para pessoas física (CPF), não
+                                para pessoa jurídica (CNPJ).
+                                <br>
+                                <strong>Destino nota:</strong> Operação Interna para cliente dentro do
+                                estado, Operação Interestadual para cliente fora do estado.
+                                <br>
+                                <strong>Finalidade:</strong>  “NFe normal” para notas de venda ou nota de entrada,
+                                “ NF Devolução” para notas de devolução.
+                                <br>
+                                <strong>Substituição Cupom:</strong>Sim se caso a venda
+                                já tenha sido realizada no caixa e emitido cupom ou venda vermelha. Não se a nota estiver sendo criada.
+                                <br>
+                                <strong>Natureza:</strong> Especificar a opreação da nota, informando se ela é "Venda", "Devolução de compra", "Devolução de venda".</p>
+                                
+                               
+
+                                <picture>
+                                    <img class="img-nota" src="assets/img/nota-fiscal/cabecalho.png" alt="">
+                                </picture>
+                        </ol>
+                      
+                        <h3 class="sub-nota">Destinatáiro</h3>
+
+                        <ol>
+                            <p>
+                                Campos obrigatório para emissão de nota será:
+                                <br>
+                                <strong>Tipo de Cliente:</strong> (Pessoa Física ou Pessoa Jurídica), 
+                                <br>
+                                <strong>Tipo de contribuinte:</strong> “Contribuinte ICMS, pessoa Jurídica (Informar Inscrição Estadual no campo ao lado do CNPJ), "Não contribuinte" pessoa física(Não preencher o campo de Inscrição Estadual).
+                                <br>
+                                <strong>Razão Social:</strong>Nome da empressa ou pessoa.
+                                <br> 
+                                <strong>CNPJ/CPF</strong> Informar o CNPJ ou CPF 
+                                <br>
+                                <strong>Endereço </strong> Informar CEP, Endereço, Numero, 
+                                Bairro, Bairro, Estado e Cidade.
+                                <br>
+                                Em seguida clicar no botão de
+                                <strong>“Iniciar Nota”</strong>.
+                            </p>
+
+                            <picture>
+                                <img class="img-nota" src="assets/img/nota-fiscal/incluir-cliente.png" alt="">
+                            </picture>
+                        </ol>
+
+                        
+
+                        <h3 class="sub-nota">Produtos </h3>
+                        <ol>
+                            <p>
+                                Para inserção dos produtos, basta pesquisar o produto desejado no campo de “Produto ou Código”, em seguida vai clicar no produto desejado, onde será aberto uma janela para colocar a quantia a ser vendida, o valor e CFOP de operação. Nessa tela também tem a opção de “Importar Venda”, nela você pode realizar a importação de produtos de vendas que já foram realizadas através do caixa.
+                            </p>
+                            <picture>
+                                <img class="img-nota" src="assets/img/nota-fiscal/incluir-produto.png" alt="">
+                            </picture>
+                        </ol>
+
+                        <h3 class="sub-nota">Inclusão de Produtos</h3>
+                        <ol>
+                            <p>
+                                Após selecionar o produto será exibida essa janela para ser inserida a “quantidade,
+                                Valor de venda, CFOP” após ter essas informações clicar em incluir. Será feito esse
+                                procedimento para os demais produtos, caso a nota seja composta por mais de um.
+                            </p>
+                            <picture>
+                                <img class="img-nota" src="assets/img/nota-fiscal/informacao-produto.png" alt="">
+                            </picture>
+                        </ol>
+
+                        <h3 class="sub-nota"> Emissão de Nota</h3>
+                        <ol>
+                            <p>
+                                Depois de todos os produtos inseridos só será necessário clicar no botão SALVAR, para
+                                que as informações sejam salvas, em seguida no botão EMITIR NOTA. Na imagem
+                                abaixo eu deixei em destaque mais dois botões que o botão CANCELAR NOTA e
+                                INUILIZAR NOTA. O botão de cancelar nota, como a descrição já diz vai ser utilizado
+                                quando necessário cancelar a nota, esse cancelamento só é permitido ser realizado em
+                                até 24 horas. Após esse período será necessário realizar uma Nota de Devolução. Que
+                                será assunto para nosso próximo tópico.
+                            </p>
+                            <picture>
+                                <img class="img-nota" src="assets/img/nota-fiscal/emitir-nota.png" alt="">
+                            </picture>
+                        </ol>
+                    </ol>
+                   
+                </p>
+
+                -- Imagem explicativa 
+                
             </div>
         </section>
         <!-- About Section-->
@@ -178,6 +237,8 @@
                 </div>
               
             </div>
+              
+            </div>
         </section>
        
         <!-- Footer-->
@@ -214,6 +275,9 @@
                 </div>
             </div>
         </footer>
+
+       
+
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
