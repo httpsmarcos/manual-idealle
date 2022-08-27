@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Idealle Sistemas</title>
+        <title>NFe de Devolução</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -55,7 +55,7 @@
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Manual nota</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Emissão Nota Devolução</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -63,55 +63,114 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" >
-                            <div class=" d-flex align-items-center justify-content-center h-100 w-100">
-                                <!-- <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div> -->
-                            </div>
-                            <a href="notafiscal.html">
-                                <img class="img-fluid" src="assets/img/portfolio/notafiscal.png" alt="..." />
-                            </a>
+                <p class="mb-4">
+                    <ol style="padding:35px ;" class="area-nota">
+                        <h3 class="sub-nota">Informações da nota</h3>
+                        <ol>
+                            <p>
+                                Na parte lateral esquerda vai clicar no botão “Nota Fiscal (NFe) &gt; Incluir ”, em seguida vai inserir as seguintes informações:
+                            </p>
+                            <p>
+                                <strong>Tipo Nota:</strong> Na situação de devolução de compra, vai sempre utilizado como saída.
+                                <br>
+                                <strong>Forma de Pagamento:</strong> Não haverá pagamento para esse tipo de operação. Então deixar a opção "Sem Pagamento".
+                                <br>
+                                <strong>Consumidor Final:</strong> Deixar a opção "Não", o emissor da nota de compra (quem te vendeu) ele sempre vai ser pessoa Jurídica
+                                <br>
+                                <strong>Destino nota:</strong> Operação Interna para Fornecedor dentro do
+                                estado, Operação Interestadual para Fornecedor fora do estado.
+                                <br>
+                                <strong>Finalidade:</strong> Vai ser utilizado apção “NF Devolução” para notas de devolução.
+                                <br>
+                                <strong>Substituição Cupom: </strong> Vai ficar marcado como "Não"
+                                <br>
+                                <strong>Natureza:</strong> A natureza da nota vai ser "Devolução de compra".
                             
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal">
-                            <div class="align-items-center justify-content-center h-100 w-100">
+                            </p>
+                               
 
-                            </div>
-                            <a href="devolucao.html">
-                                <img class="img-fluid" src="assets/img/portfolio/devolucao.png" alt="..." />
-                            </a>
-                            
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal">
-                            <div class="align-items-center justify-content-center h-100 w-100">
-                            </div>
+                                <picture>
+                                    <img class="img-nota" src="assets/img/nota-fiscal/inf_nfe_devolucao.png" alt="">
+                                </picture>
+                        </ol>
+                      
+                        <h3 class="sub-nota">Destinatáiro</h3>
 
-                            <a href="garantia.html">
-                                <img class="img-fluid" src="assets/img/portfolio/garantia.png" alt="..." />
-                            </a>
-                            
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal">
-                            <div class="align-items-center justify-content-center h-100 w-100">
-                            </div>
-                           
-                            <a href="subs_cupom.html">
-                                <img class="img-fluid" src="assets/img/portfolio/substituicao.png" alt="..." />    
-                            </a> 
-                        </div>
-                    </div>
-                </div>
+                        <ol>
+                            <p>
+                                Campos obrigatório para preenchimento no formulário de cadastro para a emissão de nota será:
+                                <br>
+                                <strong>Tipo de Cliente:</strong> Pessoa Jurídica 
+                                <br>
+                                <strong>Tipo de contribuinte:</strong> “Contribuinte ICMS, pessoa Jurídica (Informar Inscrição Estadual no campo ao lado do CNPJ).
+                                <br>
+                                <strong>Razão Social:</strong>Nome da empressa ou pessoa.
+                                <br> 
+                                <strong>CNPJ/CPF:</strong> Informar o CNPJ 
+                                <br>
+                                <strong>Endereço: </strong> Informar CEP, Endereço, Numero, 
+                                Bairro, Bairro, Estado e Cidade.
+                                <br>
+                                 Em seguida clicar no botão de
+                                <strong>“Iniciar Nota”</strong>.
+                            </p>
+
+                            <picture>
+                                <img class="img-nota" src="assets/img/nota-fiscal/incluir-cliente.png" alt="">
+                            </picture>
+                        </ol>
+
+                        
+
+                        <h3 class="sub-nota">Produtos </h3>
+                        <ol>
+                            <p>
+                                Para inserção dos produtos, basta pesquisar o produto desejado utilizando o campo "Produto", onde a pesquisa pode ser feita utilizandoa descrição ou parte da descrição. E o campo "Código”, vai realizar a pesquisa a partir do código do produto, definido na hora do cadastro, em seguida vai clicar no produto desejado, onde será aberto uma janela para colocar a quantia a ser vendida, o valor e CFOP de operação.
+                            </p>
+                            <picture>
+                                <img class="img-nota" src="assets/img/nota-fiscal/pesq_prod_devolucao.png" alt="">
+                            </picture>
+                        </ol>
+
+                        <h3 class="sub-nota">Inclusão de Produtos</h3>
+                        <ol>
+                            <p>
+                                Após selecionar o produto será exibida essa janela para ser inserida a “quantidade,
+                                Valor de venda, CFOP” após ter essas informações clicar em incluir. Lembrando que o CFOP ser incluso nos Produtos será o CFOP 6202 caso o cliente seja de fora do estado. Caso não saiba qual CFOP utilizar em outras situações basta clicar aqui em <a href="#tabela">TABELA CFOP</a>. Será feito esse procedimento para os demais produtos, caso a nota seja composta por mais de um.
+                            </p>
+                            <picture>
+                                <img class="img-nota" src="assets/img/nota-fiscal/inclui_prod_devolucao.png" alt="">
+                            </picture>
+                        </ol>
+
+                        <h3 class="sub-nota"> Inclusão de Produtos (ICMS)</h3>
+                        <ol>
+                            <p>
+                                Depois que as informações do produto for preenchida na aba de cadastro como ensinado anteriormente se faz necessário dar uma conferida na aba de ICMS. Caso se faça necessário o destaque de ICMS na nota de devolução, será necessário realizar alterações nessa aba de ICMS. Para isso você vai alterar o <strong>Tipo de Operação</strong>, deixando selecionada a opção "900 - Outros" e verificar a inofrmação na nota de compra qual a "Aliquota de ICMS" e no campo <strong>Ali. do ICMS(%)</strong> colocar o valor correspondente ao que está na nota, em seguida clicar no botão "Calcular ICMS". Já que a nota de devolução é basicamente um espelho da nota de compra.
+                            </p>
+                            <picture>
+                                <img class="img-nota" src="assets/img/nota-fiscal/incluir-produto-icms.png" alt="Destaque de ICMS">
+                            </picture>
+                        </ol>
+
+                        <h3 class="sub-nota">Emissão de Nota</h3>
+                        <ol>
+                            <p>
+                                Depois de todos os produtos inseridos só será necessário clicar no botão SALVAR, para
+                                que as informações sejam salvas, em seguida no botão EMITIR NOTA. Na imagem
+                                abaixo eu deixei em destaque mais dois botões que o botão CANCELAR NOTA e
+                                INUILIZAR NOTA. O botão de <strong>cancelar nota</strong>, como a descrição já diz vai ser utilizado
+                                quando necessário cancelar a nota, esse cancelamento só é permitido se realizado em
+                                até 24 horas. Após esse período será necessário realizar uma Nota de Devolução. Já o botão <strong>inutilizar</strong> é utilizado quando a nota é gerada e precisa ser cancelada antes mesmo da emissão.
+                            </p>
+                            <picture>
+                                <img class="img-nota" src="assets/img/nota-fiscal/emitir-nota.png" alt="emissão de nota">
+                            </picture>
+                        </ol>
+                    </ol>
+                   
+                </p>
+                
             </div>
         </section>
         <!-- About Section-->
@@ -126,7 +185,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
-                <div class="tebela" >
+                <div class="tebela" id="tabela" >
                     <table>
                         <thead >
                             <th>
@@ -184,6 +243,8 @@
                 </div>
               
             </div>
+              
+            </div>
         </section>
        
         <!-- Footer-->
@@ -220,6 +281,9 @@
                 </div>
             </div>
         </footer>
+
+       
+
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
